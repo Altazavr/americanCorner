@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+    <ul>
+        <% users.forEach(user => { %>
+            <li><%= user.username %> 
+                <% if (user.isAdmin) { %>
+                    <span>(Admin)</span>
+                <% } %>
+                <form id="deleteForm_<%= user._id %>" action="/main/delete_user" method="post">
+                    <input type="hidden" name="user_id" value="<%= user._id %>">
+                    <button type="button" onclick="deleteUser('<%= user._id %>')">Delete</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+
+    <script>
+        function deleteUser(userId) {
+            if (confirm('Вы уверены, что хотите удалить этого пользователя?')) {
+                document.getElementById('deleteForm_' + userId).submit();
+            }
+        }
+    </script>
+</body>
+</html>

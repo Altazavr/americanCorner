@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d2a36192f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>mainPage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-menu">
+            <div class="nav-logo">
+                <i class="fa-solid fa-circle"></i>
+                <h3 class="logo-text">Code Space</h1>
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="nav-links">
+                <a href="/nav/resume.html" class="nav-item resume">Resume</a>
+                <a href="/nav/projects.html" class="nav-item projects">Projects</a>
+                <a href="/nav/contacts.html" class="nav-item contacts">Contacts</a>
+            </div>
+            <div class="enter">
+                <a href="/main/register" class="sign-in">sign in</a>
+                <a href="/main/login" class="sign-up">sign up</a>
+            </div>
+        </div>
+        <div class="introduce">
+            <img src="./images/avatar.jpg" alt="#" class="photo">
+            <div class="introduce-item">
+                <h1 class="greeting">Hello</h1>
+                <div class="description">
+                    <h1 class="description-heading">A bit about me</h1>
+                    <p class="description-text">Меня зовут Батырхан, мне 16 лет. Делаю фронтенд сайты на протяжении года, помимо этого изучаю бэкенд. Со мной ты научишься кодить!</p>
+                </div>
+            </div>
+            <div class="links">
+                <a href="/nav/resume.html" class="link link-resume">resume</a>
+                <a href="/nav/projects.html" class="link link-project">projects</a>
+                <a href="/nav/contacts.html" class="link link-contact">contacts</a>
+            </div>
+        </div>
+        <footer>
+            <!-- <div class="user-input">
+                <form method="POST" action="/main/register" id="register-user">
+                    <input name="username" type="text" placeholder="username" class="username input-item">
+                    <input name="email" type="email" placeholder="email" required class="email input-item">
+                    <input name="password" type="password" placeholder="password" required class="password input-item">
+                    <button type="submit" class="submit">Sign up</button>
+                </form>
+            </div> -->
+        <form method="POST" action="/send-email">
+            <input type="email" name="myEmail" placeholder="Введите ваш email" required>
+            <input type="email" name="userEmail" placeholder="Введите email получателя письма" required>
+            <textarea name="text" placeholder="Введите текст письма" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+            <!--Добавь footer--></footer>
+    </div>
+    <script src="./scripts/linkTransition.js"></script>
+</body>
+</html>
