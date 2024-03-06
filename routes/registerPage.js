@@ -23,7 +23,11 @@ router.post('/register', async (req, res) => {
                 createdAt: new Date(),
             }
         );
-        await newUser.save();
+        if(newUser.username === 'admin') {
+            res.send('Имя Админ не может существовать');
+        } else {
+            await newUser.save();
+        }
         console.log('Пользователь успешно зарегестрирован');
         res.redirect('/main/login');
     } catch(e) {

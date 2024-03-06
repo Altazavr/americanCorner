@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var currentPath = window.location.pathname;
     navLinks.forEach(function(navLink) {
         let linkPath = navLink.getAttribute('href');
+        console.log(linkPath)
         if (currentPath === linkPath) {
             navLink.classList.add('active');
         }

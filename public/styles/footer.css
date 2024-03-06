@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+footer {
+    background-color: #80d8da;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.privacy {
+}
+.privacy-text {
+}
+.fa-regular {
+}
+.fa-copyright {
+}
+.footer-info {
+    display: flex;
+    gap: 70px;
+}
+.my-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.call {
+}
+.call-heading {
+    margin-bottom: 10px;
+}
+.call-text {
+}
+.email {
+}
+.email-heading {
+    margin-bottom: 10px;
+}
+.networks {
+}
+.network-heading {
+    margin-bottom: 10px;
+}
+.networks-icons {
+    display: flex;
+    gap: 15px;
+}
+.fa-brands {
+    font-size: 20px;
+}
+.fa-instagram {
+}
+.fa-telegram {
+}
+.fa-facebook-f {
+}
+.fa-linkedin-in {
+}

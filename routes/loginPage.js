@@ -11,24 +11,27 @@ router.post('/login', async (req, res) => {
     const { username, password } = req.body;
     try {
         const existingUser = await User.findOne({ username });
-        const existingAdmin = await User.findOne({ username });
-        if(!existingUser) {
-            res.send('<h1>Пользователь с таким именем не зарегестрирован...  <a href="/main/register">Кликните чтобы зарегестрироваться</a></h1>')
+        const existingAdmin = await Admin.findOne({ username });
+    
+        if(!existingUser && !existingAdmin) {
+            res.send('<h1>Пользователь с таким именем не зарегистрирован...  <a href="/main/register">Кликните чтобы зарегистрироваться</a></h1>');
             return;
         }
-        if(!existingAdmin) {
-            res.send('<h1>Админ с таким именем не зарегестрирован...</h1>')
-            return;
-        }
-        const checkedHashedPassword = await comparedPassword(password, existingUser.password);
-        if(password === Admin.password) {
-            res.redirect('/adminPage');
+    
+        let checkedHashedPassword;
+    
+        if(existingUser) {
+            checkedHashedPassword = await comparedPassword(password, existingUser.password);
         } else {
-            res.send('Неправильно введен пароль');
+            checkedHashedPassword = await comparedPassword(password, existingAdmin.password);
         }
-        
+    
         if(checkedHashedPassword) {
-            res.redirect('/main');
+            if(existingAdmin) {
+                res.redirect('/main/adminPage');
+            } else {
+                res.redirect('/main');
+            }
         } else {
             res.send('Неправильно введен пароль');
         }
