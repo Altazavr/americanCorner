@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d2a36192f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <link rel="stylesheet" href="../../styles/contact.css">
+    <title>Contacts</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="nav-menu">
+                <div class="nav-logo">
+                    <i class="fa-solid fa-circle"></i>
+                    <h3 class="logo-text">Code Space</h1>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="/HTML/nav/resume.html" class="nav-item resume">Resume</a>
+                    <a href="/HTML/nav/projects.html" class="nav-item projects">Projects</a>
+                    <a href="/HTML/nav/contacts.html" class="nav-item contacts">Contacts</a>
+                </div>
+                <div class="enter">
+                    <a href="/main/register" class="sign-in sign">sign in</a>
+                    <a href="/main/login" class="sign-up sign">sign up</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-inner">
+                    <div class="contact-heading">
+                        <h1 class="heading-item">Contact with me</h1>
+                        <!-- <i class="fa-solid fa-address-card"></i> -->
+                        <i class="fa-regular fa-address-card"></i>
+                    </div>
+                    <form action="#" id="contact-form">
+                        <div class="name-group group">
+                            <div class="input">
+                                <label for="first-name" class="name-label">First Name <span style="color: #007bff;">*</span></label>
+                                <input type="text" class="first-name name">
+                            </div>
+                            <div class="input">
+                                <label for="last-name" class="name-label">Last Name <span style="color: #007bff;">*</span></label>
+                                <input type="text" class="last-name name">
+                            </div>
+                        </div>
+                        <div class="email-group group">
+                            <label for="email">Email  <span style="color: #007bff;">*</span></label>
+                            <input type="email" class="email">
+                        </div>
+                        <div class="message-group group">
+                            <label for="message">Message</label>
+                            <textarea name="message" class="message"></textarea>
+                        </div>
+                        <div class="btn-group group">
+                            <button type="submit" id="submit-btn">send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

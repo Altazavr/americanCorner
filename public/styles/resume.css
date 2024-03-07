@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+body {
+    box-sizing: border-box;
+}
+.resume-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
+    gap: 20px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../images/success-bcg.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.resume-heading {
+    margin-bottom: 80px;
+}
+.resume-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1000px;
+    background-color: #80d8da;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideRight 0.5s ease forwards;
+}
+.item-heading {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 250px;
+}
+.list-text {
+    max-width: 500px;
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 40px;
+}
+.list-text>li {
+    margin: 10px 0;
+}

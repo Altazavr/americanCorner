@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d2a36192f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/gmail.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <title>mainPage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-menu">
+            <div class="nav-logo">
+                <i class="fa-solid fa-circle"></i>
+                <h3 class="logo-text">Code Space</h1>
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="nav-links">
+                <a href="./nav/resume.html" class="nav-item resume">Resume</a>
+                <a href="./nav/projects.html" class="nav-item projects">Projects</a>
+                <a href="./nav/contacts.html" class="nav-item contacts">Contacts</a>
+            </div>
+            <div class="enter">
+                <a href="/main/register" class="sign-in sign">sign in</a>
+                <a href="/main/login" class="sign-up sign">sign up</a>
+            </div>
+        </div>
+        <div class="introduce">
+            <img src="../images/avatar.jpg" alt="#" class="photo">
+            <div class="introduce-item">
+                <h1 class="greeting">Hello</h1>
+                <div class="description">
+                    <h1 class="description-heading">A bit about me</h1>
+                    <p class="description-text">Меня зовут Батырхан, мне 16 лет. Делаю фронтенд сайты на протяжении года, помимо этого изучаю бэкенд. Со мной ты научишься кодить!</p>
+                </div>
+            </div>
+            <div class="links">
+                <a href="./nav/resume.html" class="link link-resume">resume</a>
+                <a href="./nav/projects.html" class="link link-project">projects</a>
+                <a href="./nav/contacts.html" class="link link-contact">contacts</a>
+            </div>
+        </div>
+            <!-- <div class="user-input">
+                <form method="POST" action="/main/register" id="register-user">
+                    <input name="username" type="text" placeholder="username" class="username input-item">
+                    <input name="email" type="email" placeholder="email" required class="email input-item">
+                    <input name="password" type="password" placeholder="password" required class="password input-item">
+                    <button type="submit" class="submit">Sign up</button>
+                </form>
+            </div> -->
+            <form method="POST" action="/send-email" id="gmail">
+                <label for="myEmail">Email</label>
+                <input type="email" name="myEmail" id="myEmail" required class="input">
+                
+                <label for="userEmail">Email получателя</label>
+                <input type="email" name="userEmail" id="userEmail" required class="input">
+                
+                <label for="text">message</label>
+                <textarea name="text" id="text" required class="input"></textarea>
+                <button type="submit" id="submit-btn">send</button>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="privacy">
+                <p class="privacy-text"><i class="fa-regular fa-copyright"></i> Made by Batyrkhan Kusainov</p>
+                <p class="privacy-text">Powered and secured by sources</p>
+            </div>
+            <div class="footer-info">
+                <div class="my-data call">
+                    <h4 class="call-heading">Call</h4>
+                    <p class="call-text">+7 776 280 8372</p>
+                </div>
+                <div class="my-data email">
+                    <h4 class="email-heading">Write</h4>
+                    <p class="call-text">info@gmail.com</p>
+                </div>
+                <div class="my-data networks">
+                    <h4 class="network-heading">Call</h4>
+                    <div class="networks-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var inputs = document.getElementsByClassName("input");
+
+            for (var i = 0; i < inputs.length; i++) {
+                inputs.style.border = "none";
+                inputs[i].addEventListener("click", function() {
+                    this.style.border = "none";
+                });
+            }
+        });
+    </script> -->
+    <script src="../scripts/linkTransition.js"></script>
+</body>
+</html>

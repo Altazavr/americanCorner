@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 200px 0;
+    background-color: azure;
+}
+.contact-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.fa-address-card {
+    font-size: 45px;
+    margin: auto 0;
+}
+#contact-form {
+    background-color: #80d8da;
+    padding: 45px 75px;
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+}
+.group {
+    margin: 30px 0;
+}
+.name-group {
+    display: flex;
+    gap: 50px;
+}
+.name {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: red 1px solid;
+    width: 250px;
+    padding-bottom: 10px;
+}
+.email-group {
+}
+.email {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: red 1px solid;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.message-group {
+    border-bottom: black 2px solid;
+}
+.message-group:hover {
+    border-bottom: #007bff 2px solid;
+}
+.message {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    resize: none;
+    padding-bottom: 40px;
+}
+.btn-group {
+}
+#submit-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+#submit-btn:hover {
+    color: #a6e5e7;
+    background-color: #5ec5c8;
+    transition: .3s;
+}
