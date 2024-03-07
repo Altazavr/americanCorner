@@ -79,13 +79,14 @@ body {
     gap: 20px
 }
 .sign {
-    padding: 0 15px;
     cursor: pointer;
     color: black;
 }
 .sign-in {
     border-right: 1px solid black;
+    padding-right: 15px;
 }
 .sign-up {
     border-left: 1px solid black;
+    padding-left: 15px;
 }
